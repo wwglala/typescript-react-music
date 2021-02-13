@@ -1,13 +1,14 @@
 import 'antd/dist/antd.css'
 import TabBar from './components/tabbar'
 import { tabBarList } from './axios/data'
-import './normal.scss'
+import './global.scss'
 import './assets/js/rem'
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import routes from './router'
 import { Suspense } from 'react';
 import MyScroll from './components/scroll'
 import { Spin } from 'antd'
+import './assets/js/scroller'
 
 function App() {
 

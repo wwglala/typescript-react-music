@@ -7,7 +7,11 @@ body,
 
 .container{
   height: calc(100% - 1.44rem);
+  background: #fff;
 }
 .active{
   color:deeppink
+}
+.slider-list{
+  height: 4.47rem !important;
 }

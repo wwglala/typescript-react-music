@@ -18,6 +18,10 @@ export default [
     component: lazy(() => import('../pages/profile'))
   },
   {
+    path: '/search',
+    component: lazy(() => import('../pages/search'))
+  },
+  {
     path: '/test',
     component: lazy(() => import('../pages/test/test'))
   },
