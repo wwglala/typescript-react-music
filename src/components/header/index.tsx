@@ -2,8 +2,6 @@ import { RouteComponentProps, withRouter } from 'react-router-dom'
 function Index(props: RouteComponentProps) {
 
   const toSearch = () => {
-    console.log(123);
-
     props.history.push('/search')
   }
   return (

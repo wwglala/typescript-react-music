@@ -9,7 +9,7 @@ export default function Index() {
       {
         list.map(item => {
           return (
-            <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <div key={item.id} style={{ display: 'flex', flexFlow: 'column', alignItems: 'center', justifyContent: 'center' }}>
               <div style={{ width: '1.4rem', height: '1.4rem' }}>
                 <img style={{ width: '100%', height: '100%' }} src={item.img} alt={item.label} />
               </div>

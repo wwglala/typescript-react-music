@@ -21,10 +21,8 @@ function mapStateToProps(state: any) {
 class Index extends Component<Iprops, {}> {
 
   async componentDidMount() {
-    console.log(this.props);
-
     await this.props.get_playList()
-
+    window.$betterScroller.refresh()
   }
 
   render() {
@@ -33,7 +31,7 @@ class Index extends Component<Iprops, {}> {
         {
           this.props.playList?.map(item => {
             return (
-              <div style={{ width: '3.64rem', height: '4.7rem' }}>
+              <div key={item.id} style={{ width: '3.64rem', height: '4.7rem' }}>
                 <img src={item.picUrl} alt="" style={{ width: '3.64rem', height: '3.64rem' }} />
                 <p style={{ fontSize: '0.36rem', lineHeight: '0.5rem', marginTop: '0.1rem' }}>{item.name}</p>
               </div>

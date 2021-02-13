@@ -6,12 +6,10 @@ import Slider from '@c/slider'
 import Recom from '@c/recom'
 import PlayList from '@c/playList'
 
-function Index() {
-
+function Index(props: any) {
   const init = async () => {
     await Store.getBannerList('/banner', { type: 2 })
   }
-
   useEffect(() => {
     init()
   }, [])
@@ -21,6 +19,10 @@ function Index() {
       <Header></Header>
       <Slider bannerList={Store.bannerList}></Slider>
       <Recom></Recom>
+      <PlayList></PlayList>
+      <PlayList></PlayList>
+      <PlayList></PlayList>
+      <PlayList></PlayList>
       <PlayList></PlayList>
     </>
   )

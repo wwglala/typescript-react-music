@@ -20,7 +20,7 @@ function App() {
             <>
               <MyScroll>
                 {
-                  routes.map(item => <Route key={item.path} path={item.path} component={item.component}></Route>)
+                  routes.map(item => <Route key={item.path} path={item.path} render={() => <item.component />}></Route>)
                 }
               </MyScroll>
               <TabBar tabBarList={tabBarList}></TabBar>

@@ -10,7 +10,6 @@ class Store {
   getBannerList = async <T>(url: string, params: T) => {
     let res = await post(url, params)
     this.bannerList = res.banners
-    console.log(toJS(this.bannerList));
   }
 }
 

@@ -13,8 +13,6 @@ interface ITabBarProps extends RouteComponentProps {
 }
 
 function Index(props: ITabBarProps) {
-  console.log(props);
-
   const isActive = (item: ITabBar): boolean => {
     return props.location.pathname === item.path
   }
