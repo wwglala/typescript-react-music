@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, ReactElement } from 'react';
+import { useEffect, useRef, ReactElement } from 'react';
 import BScroll from '@better-scroll/core'
 import PullDown from '@better-scroll/pull-down'
 

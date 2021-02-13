@@ -1,9 +1,10 @@
-import React from 'react'
+import { WingBlank, SearchBar } from 'antd-mobile'
 
 export default function Index() {
   return (
     <div>
-      home
+      <WingBlank><div className="sub-title">Normal</div></WingBlank>
+      <SearchBar placeholder="Search" maxLength={8} />
     </div>
   )
 }
