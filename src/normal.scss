@@ -1,0 +1,13 @@
+@import './assets/css/base.scss';
+html,
+body,
+#root{
+  height: 100%;
+}
+
+.container{
+  height: calc(100% - 1.44rem);
+}
+.active{
+  color:deeppink
+}

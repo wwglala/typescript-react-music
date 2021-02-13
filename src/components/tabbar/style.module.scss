@@ -1,0 +1,27 @@
+
+.tabbar{
+  list-style: none;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  .icon {
+    width: 0.6rem;
+    height: 0.6rem;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    vertical-align: -20%;
+  }
+  .tabBarItem{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
